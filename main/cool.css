@@ -1,0 +1,117 @@
+/* Make the entire popup translucent */
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(34, 34, 34, 0.7); /* Translucent background */
+    backdrop-filter: blur(12px); /* Glassmorphism blur effect */
+    border-radius: 20px; /* Rounded edges */
+    padding: 20px;
+    margin: 0;
+    min-width: 300px;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    color: white;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-radius: 30px;
+  }
+  
+  /* Heading styles */
+  h3 {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #B22222; /* Dark red */
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  /* Input field styling */
+  input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Light translucent background */
+    color: white; /* Text color */
+    font-size: 1em;
+  }
+  
+  input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  input[type="text"]:focus {
+    border-color: #FF6347; /* Light red border on focus */
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(139, 0, 0, 0.9); /* Dark red */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 85, 0, 0.8); /* Lighter red on hover */
+  }
+  
+  /* List of allowed sites */
+  ul#allowedList {
+    list-style-type: none;
+    padding: 5px;
+    margin-top: 10px;
+    background: rgba(35, 27, 90, 0.6); /* Dark navy translucent */
+    border-radius: 10px;
+    max-height: 200px; /* Scrollable if too long */
+    overflow-y: auto;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Remove button inside list */
+  li button {
+    background-color: rgba(220, 53, 69, 0.7); /* Semi-transparent red */
+    border: none;
+    color: white;
+    max-width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  li button:hover {
+    background-color: rgba(255, 85, 0, 0.8);
+  }
+  
+  /* Form for adding sites */
+  .addSiteForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  /* Automatically focus input when the popup opens */
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+  }
+  

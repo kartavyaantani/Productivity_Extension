@@ -1,0 +1,137 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #211e1ea9; /* Semi-transparent background */
+    margin: 0;
+    padding: 0;
+    background-image: url('BG.jpg'); /* Background image */
+    background-size: cover;
+    border-radius: 20px;
+  min-width: 300px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  
+  h4 {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+
+.container {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(34, 33, 33, 0.348); /* Light semi-transparent background */
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    backdrop-filter: blur(15px); /* Blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for glass effect */
+}
+
+#Motivation{
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 100px auto;
+    padding: 30px;
+    background: rgba(34, 33, 33, 0.348); /* Light semi-transparent background */
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    backdrop-filter: blur(15px); /* Blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255); /* Semi-transparent border */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255); /* Light semi-transparent background */
+    color: #000000; /* Text color */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(83, 83, 83, 0.9); /* Semi-transparent button background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(35, 94, 173, 0.8); /* Slightly lighter on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+    color: #ffffff;
+    background-color: rgb(35, 27, 90); /* Semi-transparent background for the list */
+    border-radius: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    flex-direction: row;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+}
+
+
+
+#removeSite {
+    background-color: #f44336;
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+.addSiteForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+
+li button {
+    background-color: rgba(220, 53, 69, 0.7); /* Semi-transparent button background */
+    border: none;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 50%;
+    max-width: 500px;
+}
+
+li button:hover {
+    background-color: rgba(255, 85, 0, 0.8); /* Slightly lighter on hover */
+}
